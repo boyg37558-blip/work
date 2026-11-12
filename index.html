@@ -1,0 +1,2216 @@
+        <!-- Product: XENON OS -->
+        <div class="card" data-category="software" data-name="XENON OS Ultra-Fast Custom ROM Performance Engine Android">
+          <span class="card-badge">-80%</span>
+          <a href="product.html?id=xenon-os" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600" alt="XENON OS Custom ROM" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">Android OS • Performance Tuning</span>
+            <a href="product.html?id=xenon-os" class="card-title">XENON OS — Ultra-Fast Custom ROM & Performance Engine</a>
+            <div class="rating">★★★★★ <span>(1,650)</span></div>
+            <p class="card-desc">Zero bloatware, 120 FPS gaming kernel & 1-Click Desktop Flasher for Windows & Mac. 1-Year Warranty included.</p>
+            <div class="card-footer">
+              <div class="price-wrap">
+                <span class="price">$79</span>
+                <span class="price-old">$399</span>
+              </div>
+              <div class="btn-wrap">
+                <a href="product.html?id=xenon-os" class="details-link">Details</a>
+                <button class="btn btn-buy" onclick="buyProduct('xenon-os', 'XENON OS — Ultra-Fast Custom ROM', 79)">Buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigiStoreX — Premier Digital Products & Tools Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- PAYPAL JAVASCRIPT SDK WITH YOUR LIVE CLIENT ID -->
+  <script src="https://www.paypal.com/sdk/js?client-id=BAAcXpZKSwsG3RmBtUPcIE8nQ5scxoXEp3TUj9_uQIqCrou5RvZIYcrKt5VUOMWtcxHpqbLsvO4am37fe0&currency=USD"></script>
+
+  <style>
+    :root {
+      --bg-dark: #0a0c10;
+      --card-bg: #12151c;
+      --card-hover: #191e28;
+      --accent-orange: #f59e0b;
+      --accent-hover: #d97706;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border-color: #262b36;
+      --badge-red: #ef4444;
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: var(--bg-dark); color: var(--text-main); font-family: var(--font-main); line-height: 1.5; overflow-x: hidden; }
+
+    header {
+      background: #0f1218;
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      text-decoration: none;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.5px;
+    }
+    .logo span { color: var(--accent-orange); }
+
+    .search-bar {
+      flex: 1;
+      max-width: 550px;
+      display: flex;
+      background: #1a1e27;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .search-category {
+      background: #242936;
+      color: var(--text-muted);
+      border: none;
+      padding: 0 12px;
+      font-size: 13px;
+      outline: none;
+    }
+
+    .search-input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      padding: 10px 14px;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .search-btn {
+      background: var(--accent-orange);
+      border: none;
+      padding: 0 18px;
+      color: #000;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .search-btn:hover { background: var(--accent-hover); }
+
+    .nav-actions { display: flex; align-items: center; gap: 20px; }
+    .nav-link { color: var(--text-muted); text-decoration: none; font-size: 13px; display: flex; flex-direction: column; transition: color 0.2s; }
+    .nav-link span:first-child { font-size: 11px; color: #6b7280; }
+    .nav-link:hover { color: #fff; }
+
+    .cart-btn {
+      background: #1e2430;
+      border: 1px solid var(--border-color);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      position: relative;
+    }
+
+    .cart-badge {
+      background: var(--accent-orange);
+      color: #000;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 20px;
+    }
+
+    /* FILTER BAR */
+    .filter-bar {
+      background: #11141b;
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px 0;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .filter-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .filter-tab {
+      background: transparent;
+      color: var(--text-muted);
+      border: 1px solid transparent;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-tab:hover { color: #fff; background: #1a1f2b; }
+    .filter-tab.active { background: var(--accent-orange); color: #000; border-color: var(--accent-orange); }
+
+    /* MAIN CONTAINER */
+    .main-container { max-width: 1300px; margin: 0 auto; padding: 30px 20px 60px; }
+
+    /* SECTION HEADER */
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 40px 0 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .section-title-wrap { display: flex; align-items: center; gap: 12px; }
+    .section-number { background: var(--accent-orange); color: #000; font-size: 13px; font-weight: 800; padding: 4px 10px; border-radius: 6px; }
+    .section-title { font-size: 22px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+    .see-more { color: var(--accent-orange); text-decoration: none; font-size: 13px; font-weight: 600; }
+
+    /* PRODUCT GRID */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    /* PRODUCT CARD */
+    .product-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent-orange);
+    }
+
+    .card-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--badge-red);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      z-index: 2;
+    }
+
+    .card-img-wrap {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 180px;
+      background: #181d26;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover .card-img { transform: scale(1.05); }
+
+    .card-body {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-category {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-orange);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+      line-height: 1.3;
+      text-decoration: none;
+      display: block;
+      cursor: pointer;
+    }
+    .card-title:hover { color: var(--accent-orange); }
+
+    .rating {
+      color: #fbbf24;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 10px;
+    }
+    .rating span { color: var(--text-muted); font-size: 11px; }
+
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-top: auto;
+      margin-bottom: 12px;
+    }
+
+    .old-price { color: #6b7280; text-decoration: line-through; font-size: 14px; }
+    .current-price { color: var(--accent-orange); font-size: 22px; font-weight: 800; }
+    .delivery-info { font-size: 11px; color: var(--text-muted); margin-bottom: 14px; }
+    .delivery-info span { color: #10b981; font-weight: 700; }
+
+    .card-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .add-btn {
+      background: var(--accent-orange);
+      color: #000;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      flex: 1;
+      transition: background 0.2s;
+    }
+    .add-btn:hover { background: var(--accent-hover); }
+
+    .details-btn {
+      background: #1f2937;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s;
+    }
+    .details-btn:hover { background: #374151; color: var(--accent-orange); }
+
+    /* CART DRAWER */
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      right: -420px;
+      width: 400px;
+      height: 100%;
+      background: #11141c;
+      border-left: 1px solid var(--border-color);
+      z-index: 200;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      transition: right 0.3s ease;
+      box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    }
+    .cart-drawer.open { right: 0; }
+
+    .cart-drawer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+
+    .cart-items { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #181c25;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    .backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 150;
+      display: none;
+    }
+    .backdrop.open { display: block; }
+
+    .toast {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #10b981;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s;
+      z-index: 300;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+
+    @media (max-width: 768px) {
+      .search-bar { display: none; }
+      .nav-link { display: none; }
+      .cart-drawer { width: 100%; right: -100%; }
+    }
+  
+    /* =========================================================
+       ANIWAVE DESIGN SYSTEM (EXACT MATCH TO USER SCREENSHOT)
+    ========================================================= */
+    :root {
+      --ani-purple: #8b5cf6;
+      --ani-purple-dark: #6d28d9;
+      --ani-purple-glow: rgba(139, 92, 246, 0.45);
+      --ani-bg-box: #0d111d;
+      --ani-border: #1f273d;
+      --ani-badge-bg: rgba(255, 255, 255, 0.08);
+    }
+
+    /* 1. HERO SLIDER (ANIWAVE STYLE) */
+    .aniwave-hero-slider {
+      position: relative;
+      margin-bottom: 25px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #0d111d 0%, #070910 100%);
+      border: 1px solid var(--ani-border);
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7);
+      overflow: hidden;
+      user-select: none;
+    }
+
+    .aniwave-slider-track {
+      display: flex;
+      transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.3, 1);
+      width: 100%;
+    }
+
+    .aniwave-slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      align-items: center;
+      min-height: 440px;
+      position: relative;
+    }
+
+    /* Left Text Content */
+    .aniwave-slide-content {
+      padding: 45px 40px 40px 45px;
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .aniwave-slide-title {
+      font-size: 34px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.25;
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+    }
+
+    .aniwave-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .aniwave-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #e2e8f0;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .aniwave-badge.hot {
+      background: rgba(239, 68, 68, 0.18);
+      border-color: #ef4444;
+      color: #fca5a5;
+    }
+
+    .aniwave-badge.purple {
+      background: rgba(139, 92, 246, 0.2);
+      border-color: var(--ani-purple);
+      color: #c4b5fd;
+    }
+
+    .aniwave-badge.rating {
+      color: #facc15;
+      border-color: rgba(250, 204, 21, 0.3);
+      background: rgba(250, 204, 21, 0.1);
+    }
+
+    .aniwave-slide-desc {
+      font-size: 14.5px;
+      color: #94a3b8;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      max-width: 500px;
+    }
+
+    .aniwave-price-tag-row {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .aniwave-current-price {
+      font-size: 32px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .aniwave-old-price {
+      font-size: 18px;
+      color: #64748b;
+      text-decoration: line-through;
+    }
+
+    .aniwave-discount-pill {
+      background: #10b981;
+      color: #000;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .aniwave-actions-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* Vibrant Purple Aniwave CTA Button */
+    .aniwave-btn-play {
+      background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 13px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      box-shadow: 0 8px 25px var(--ani-purple-glow);
+      transition: all 0.25s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .aniwave-btn-play:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(139, 92, 246, 0.65);
+      background: linear-gradient(135deg, #9d74f8 0%, #7c3aed 100%);
+      color: #fff;
+    }
+
+    .aniwave-btn-details {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #f1f5f9;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 13px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      backdrop-filter: blur(8px);
+    }
+
+    .aniwave-btn-details:hover {
+      background: rgba(255, 255, 255, 0.16);
+      color: #fff;
+    }
+
+    /* Bottom Pagination Dots (Aniwave Style) */
+    .aniwave-dots-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 26px;
+    }
+
+    .aniwave-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.25);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+      padding: 0;
+    }
+
+    .aniwave-dot:hover {
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    .aniwave-dot.active {
+      width: 26px;
+      border-radius: 10px;
+      background: var(--ani-purple);
+      box-shadow: 0 0 10px var(--ani-purple);
+    }
+
+    /* Right Cinematic Artwork */
+    .aniwave-slide-visual {
+      position: relative;
+      height: 100%;
+      min-height: 440px;
+      overflow: hidden;
+    }
+
+    .aniwave-visual-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    .aniwave-slide:hover .aniwave-visual-img {
+      transform: scale(1.03);
+    }
+
+    /* Soft Gradient Blend into Left Background */
+    .aniwave-visual-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 45%;
+      height: 100%;
+      background: linear-gradient(to right, #0d111d 0%, transparent 100%);
+      pointer-events: none;
+    }
+
+    .aniwave-visual-mask-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 35%;
+      background: linear-gradient(to top, #070910 0%, transparent 100%);
+      pointer-events: none;
+    }
+
+    /* Floating Arrow Navigation */
+    .aniwave-arrow-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(13, 17, 29, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 20;
+      transition: all 0.2s ease;
+      backdrop-filter: blur(6px);
+    }
+
+    .aniwave-arrow-btn:hover {
+      background: var(--ani-purple);
+      border-color: var(--ani-purple);
+      color: #fff;
+      transform: translateY(-50%) scale(1.1);
+      box-shadow: 0 0 20px var(--ani-purple-glow);
+    }
+
+    .aniwave-arrow-btn.prev { left: 16px; }
+    .aniwave-arrow-btn.next { right: 16px; }
+
+    /* 2. ANIWAVE SOCIAL SHARE / NOTICE BAR (EXACT SCREENSHOT MATCH) */
+    .aniwave-share-bar {
+      background: #0f1322;
+      border: 1px solid var(--ani-border);
+      border-radius: 12px;
+      padding: 16px 22px;
+      margin-bottom: 35px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .aniwave-share-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .aniwave-share-msg {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #cbd5e1;
+      font-size: 13.5px;
+      font-weight: 500;
+    }
+
+    .aniwave-share-msg span.info-icon {
+      color: var(--ani-purple);
+      font-size: 16px;
+    }
+
+    .aniwave-share-buttons {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .aniwave-shares-count {
+      color: #94a3b8;
+      font-size: 12px;
+      font-weight: 700;
+      margin-right: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #ffffff;
+      text-decoration: none;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .share-btn:hover { transform: translateY(-2px); opacity: 0.95; color: #fff; }
+
+    .share-btn.fb { background: #1877f2; }
+    .share-btn.x { background: #000000; border: 1px solid #334155; }
+    .share-btn.messenger { background: #0084ff; }
+    .share-btn.reddit { background: #ff4500; }
+    .share-btn.whatsapp { background: #25d366; }
+    .share-btn.telegram { background: #0088cc; }
+
+    .aniwave-share-bottom-sub {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      font-size: 12px;
+      color: #94a3b8;
+      flex-wrap: wrap;
+    }
+
+    .aniwave-sub-badge-lite {
+      background: rgba(139, 92, 246, 0.15);
+      border: 1px solid var(--ani-purple);
+      color: #c4b5fd;
+      padding: 3px 10px;
+      border-radius: 4px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* 3. 2-COLUMN LAYOUT: MAIN CATALOG + TRENDING LEADERBOARD SIDEBAR */
+    .aniwave-content-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .aniwave-catalog-column {
+      min-width: 0;
+    }
+
+    /* ANIWAVE "TOP ANIME" STYLE TRENDING WIDGET */
+    .aniwave-trending-sidebar {
+      position: sticky;
+      top: 90px;
+      background: #0f1322;
+      border: 1px solid var(--ani-border);
+      border-radius: 16px;
+      padding: 20px 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .trending-widget-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .trending-widget-title {
+      font-size: 19px;
+      font-weight: 800;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .trending-filter-tabs {
+      display: flex;
+      background: #181d2e;
+      padding: 3px;
+      border-radius: 8px;
+      gap: 2px;
+    }
+
+    .trending-tab-btn {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .trending-tab-btn:hover { color: #fff; }
+
+    .trending-tab-btn.active {
+      background: var(--ani-purple);
+      color: #ffffff;
+      box-shadow: 0 2px 8px var(--ani-purple-glow);
+    }
+
+    /* RANKED LIST ITEMS */
+    .trending-rank-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .trending-rank-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid transparent;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .trending-rank-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(139, 92, 246, 0.4);
+      transform: translateX(4px);
+    }
+
+    /* Big Hollow Neon Outline Number (Aniwave Style) */
+    .rank-number {
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1;
+      min-width: 28px;
+      text-align: center;
+      color: transparent;
+      -webkit-text-stroke: 1.5px #64748b;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .trending-rank-item:nth-child(1) .rank-number {
+      -webkit-text-stroke: 2px var(--ani-purple);
+      text-shadow: 0 0 12px var(--ani-purple);
+    }
+
+    .trending-rank-item:nth-child(2) .rank-number {
+      -webkit-text-stroke: 1.8px #a855f7;
+    }
+
+    .trending-rank-item:nth-child(3) .rank-number {
+      -webkit-text-stroke: 1.8px #38bdf8;
+    }
+
+    .rank-thumb-box {
+      width: 58px;
+      height: 72px;
+      border-radius: 8px;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: #1e2436;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .rank-thumb-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .rank-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .rank-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #f1f5f9;
+      line-height: 1.35;
+      margin-bottom: 6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .trending-rank-item:hover .rank-title {
+      color: #c4b5fd;
+    }
+
+    .rank-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .rank-price-pill {
+      background: rgba(16, 185, 129, 0.18);
+      color: #10b981;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .rank-tag-pill {
+      background: rgba(255, 255, 255, 0.06);
+      color: #94a3b8;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    /* RESPONSIVE MEDIA QUERIES */
+    @media (max-width: 1080px) {
+      .aniwave-content-grid {
+        grid-template-columns: 1fr;
+      }
+      .aniwave-trending-sidebar {
+        position: static;
+        margin-top: 40px;
+      }
+      .aniwave-slide {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+      .aniwave-slide-content {
+        padding: 30px 24px;
+      }
+      .aniwave-slide-title {
+        font-size: 26px;
+      }
+      .aniwave-slide-visual {
+        min-height: 260px;
+        height: 260px;
+      }
+      .aniwave-visual-mask {
+        width: 100%;
+        height: 40%;
+        background: linear-gradient(to bottom, #0d111d 0%, transparent 100%);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">DigiStore<span>X</span></a>
+
+      <div class="search-bar">
+        <select class="search-category" id="searchCat">
+          <option value="all">All</option>
+          <option value="video">Video Editing</option>
+          <option value="ai">AI Tools</option>
+          <option value="courses">Courses</option>
+          <option value="design">Design</option>
+          <option value="marketing">Marketing</option>
+          <option value="software">Software & Scripts</option>
+        </select>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search products, video assets, tools, templates..." />
+        <button class="search-btn" onclick="applySearch()">Search</button>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#courses-section" class="nav-link">
+          <span>Training</span>
+          <strong>Courses & Certs</strong>
+        </a>
+        <a href="#orders" class="nav-link">
+          <span>Orders</span>
+          <strong>& Returns</strong>
+        </a>
+        <button class="cart-btn" onclick="toggleCart()">
+          🛒 Cart
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CATEGORY FILTER TABS -->
+  <nav class="filter-bar">
+    <div class="filter-container">
+      <button class="filter-tab active" onclick="filterCategory('all', this)">⚡ All Products</button>
+      <button class="filter-tab" onclick="filterCategory('video', this)">🎬 Video Editing & VFX</button>
+      <button class="filter-tab" onclick="filterCategory('ai', this)">🤖 AI & Automation Tools</button>
+      <button class="filter-tab" onclick="filterCategory('courses', this)">🎓 Training & Courses</button>
+      <button class="filter-tab" onclick="filterCategory('design', this)">🎨 Design Bundles</button>
+      <button class="filter-tab" onclick="filterCategory('marketing', this)">🚀 Marketing & SEO</button>
+      <button class="filter-tab" onclick="filterCategory('software', this)">⚡ Software & SaaS Scripts</button>
+    </div>
+  </nav>
+
+  <!-- MAIN BODY -->
+  <main class="main-container">
+
+    <!-- SEARCH RESULT BANNER & EMPTY STATE -->
+    <div id="searchNotice" style="display:none; margin-bottom: 25px; padding: 14px 20px; background: #12151c; border: 1px solid var(--border-color); border-radius: 12px; justify-content: space-between; align-items: center;">
+      <span id="searchNoticeText" style="color: #fff; font-size: 15px; font-weight: 600;"></span>
+      <button onclick="resetSearch()" style="background: none; border: 1px solid var(--border-color); color: var(--accent-orange); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-weight: 700; font-size: 13px;">Clear Filter ✕</button>
+    </div>
+    
+    <div id="noResultsBox" style="display:none; text-align:center; padding: 60px 20px; background: #12151c; border: 1px solid var(--border-color); border-radius: 16px; margin: 20px 0 60px;">
+      <div style="font-size: 48px; margin-bottom: 16px;">🔍</div>
+      <h3 style="font-size: 22px; color: #fff; margin-bottom: 8px;">No Products Found</h3>
+      <p id="noResultsQuery" style="color: var(--text-muted); font-size: 15px; margin-bottom: 20px; max-width: 500px; margin-left:auto; margin-right:auto;"></p>
+      <button onclick="resetSearch()" style="background: var(--accent-orange); color: #000; font-weight: 800; padding: 12px 24px; border-radius: 8px; border:none; cursor: pointer; font-size: 15px;">View All 13 Products</button>
+    </div>
+
+    
+    
+    <!-- HERO TRENDING SLIDER (ANIWAVE DESIGN - 100% USER CONTROLLED) -->
+    <section class="aniwave-hero-slider" id="aniwaveHeroSlider">
+      
+      <!-- Big Floating Side Arrows -->
+      <button class="aniwave-arrow-btn prev" onclick="moveAniwaveSlide(-1)" aria-label="Previous Slide">❮</button>
+      <button class="aniwave-arrow-btn next" onclick="moveAniwaveSlide(1)" aria-label="Next Slide">❯</button>
+
+      <div class="aniwave-slider-track" id="aniwaveTrack">
+        
+        <!-- Slide 1: AutoReels AI -->
+        <div class="aniwave-slide">
+          <div class="aniwave-slide-content">
+            <h1 class="aniwave-slide-title">AutoReels AI — Faceless Video Factory</h1>
+            <div class="aniwave-badge-row">
+              <span class="aniwave-badge hot">🔥 TOP SELLER</span>
+              <span class="aniwave-badge purple">AI SAAS</span>
+              <span class="aniwave-badge rating">★ 5.0 (2,890)</span>
+              <span class="aniwave-badge">COMMERCIAL</span>
+              <span class="aniwave-badge">INSTANT ACCESS</span>
+            </div>
+            <p class="aniwave-slide-desc">
+              Generate 100+ viral faceless reels, TikToks & YouTube Shorts in 1-click with automated AI voiceovers, dynamic captions, and royalty-free cinematic b-roll.
+            </p>
+            <div class="aniwave-price-tag-row">
+              <span class="aniwave-current-price">$149</span>
+              <span class="aniwave-old-price">$699</span>
+              <span class="aniwave-discount-pill">-78% OFF</span>
+            </div>
+            <div class="aniwave-actions-row">
+              <a href="product.html?id=autoreels-ai" class="aniwave-btn-play">▶ BUY NOW - $149</a>
+              <a href="product.html?id=autoreels-ai" class="aniwave-btn-details">ℹ️ View Details</a>
+            </div>
+            <div class="aniwave-dots-row">
+              <button class="aniwave-dot active" onclick="jumpAniwaveSlide(0)" title="Slide 1"></button>
+              <button class="aniwave-dot" onclick="jumpAniwaveSlide(1)" title="Slide 2"></button>
+              <button class="aniwave-dot" onclick="jumpAniwaveSlide(2)" title="Slide 3"></button>
+              <button class="aniwave-dot" onclick="jumpAniwaveSlide(3)" title="Slide 4"></button>
+            </div>
+          </div>
+          <div class="aniwave-slide-visual">
+            <div class="aniwave-visual-mask"></div>
+            <div class="aniwave-visual-mask-bottom"></div>
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200" alt="AutoReels AI" class="aniwave-visual-img" />
+          </div>
+        </div>
+
+        <!-- Slide 2: LeadGen Pro -->
+        <div class="aniwave-slide">
+          <div class="aniwave-slide-content">
+            <h1 class="aniwave-slide-title">LeadGen Pro Suite — B2B Scraper</h1>
+            <div class="aniwave-badge-row">
+              <span class="aniwave-badge hot">⚡ HIGH CONVERTING</span>
+              <span class="aniwave-badge purple">B2B ENGINE</span>
+              <span class="aniwave-badge rating">★ 4.9 (1,420)</span>
+              <span class="aniwave-badge">UNLIMITED EXPORTS</span>
+            </div>
+            <p class="aniwave-slide-desc">
+              Automate verified B2B lead generation. Scrape decision-makers, direct mobile dials, and valid business emails with built-in cold email sequences.
+            </p>
+            <div class="aniwave-price-tag-row">
+              <span class="aniwave-current-price">$99</span>
+              <span class="aniwave-old-price">$499</span>
+              <span class="aniwave-discount-pill">-80% OFF</span>
+            </div>
+            <div class="aniwave-actions-row">
+              <a href="product.html?id=leadgen-pro" class="aniwave-btn-play">▶ BUY NOW - $99</a>
+              <a href="product.html?id=leadgen-pro" class="aniwave-btn-details">ℹ️ View Details</a>
+            </div>
+            <div class="aniwave-dots-row">
+              <button class="aniwave-dot" onclick="jumpAniwaveSlide(0)" title="Slide 1"></button>
+              <button class="aniwave-dot active" onclick="jumpAniwaveSlide(1)" title="Slide 2"></button>
+              <button class="aniwave-dot" onclick="jumpAniwaveSlide(2)" title="Slide 3"></button>
+              <button class="aniwave-dot" onclick="jumpAniwaveSlide(3)" title="Slide 4"></button>
+            </div>
+          </div>
+          <div class="aniwave-slide-visual">
+            <div class="aniwave-visual-mask"></div>
+            <div class="aniwave-visual-mask-bottom"></div>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200" alt="LeadGen Pro Software" class="aniwave-visual-img" />
+          </div>
+        </div>
+
+        <!-- Slide 3: SaaS LaunchPad -->
+        <div class="aniwave-slide">
+          <div class="aniwave-slide-content">
+            <h1 class="aniwave-slide-title">SaaS LaunchPad — Next.js 14 Boilerplate</h1>
+            <div class="aniwave-badge-row">
+              <span class="aniwave-badge hot">🚀 FULL STACK</span>
+              <span class="aniwave-badge purple">PAYPAL + STRIPE</span>
+              <span class="aniwave-badge rating">★ 4.9 (3,110)</span>
+              <span class="aniwave-badge">PRODUCTION READY</span>
+            </div>
+            <p class="aniwave-slide-desc">
+              Ship production-ready SaaS in 48 hours. Includes pre-configured PayPal & Stripe payments, authentication, admin dashboard, and modern landing page.
+            </p>
+            <div class="aniwave-price-tag-row">
+              <span class="aniwave-current-price">$199</span>
+              <span class="aniwave-old-price">$999</span>
+              <span class="aniwave-discount-pill">-80% OFF</span>
+            </div>
+            <div class="aniwave-actions-row">
+              <a href="product.html?id=saas-launchpad" class="aniwave-btn-play">▶ BUY NOW - $199</a>
+              <a href="product.html?id=saas-launchpad" class="aniwave-btn-details">ℹ️ View Details</a>
+            </div>
+            <div class="aniwave-dots-row">
+              <button class="aniwave-dot" onclick="jumpAniwaveSlide(0)" title="Slide 1"></button>
+              <button class="aniwave-dot" onclick="jumpAniwaveSlide(1)" title="Slide 2"></button>
+              <button class="aniwave-dot active" onclick="jumpAniwaveSlide(2)" title="Slide 3"></button>
+              <button class="aniwave-dot" onclick="jumpAniwaveSlide(3)" title="Slide 4"></button>
+            </div>
+          </div>
+          <div class="aniwave-slide-visual">
+            <div class="aniwave-visual-mask"></div>
+            <div class="aniwave-visual-mask-bottom"></div>
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200" alt="SaaS LaunchPad" class="aniwave-visual-img" />
+          </div>
+        </div>
+
+        <!-- Slide 4: Cinematic LUTs -->
+        <div class="aniwave-slide">
+          <div class="aniwave-slide-content">
+            <h1 class="aniwave-slide-title">Cinematic LUTs & Sound Library</h1>
+            <div class="aniwave-badge-row">
+              <span class="aniwave-badge hot">🎬 2,500+ ASSETS</span>
+              <span class="aniwave-badge purple">PREMIERE & CAPCUT</span>
+              <span class="aniwave-badge rating">★ 4.9 (1,940)</span>
+              <span class="aniwave-badge">4K / 8K READY</span>
+            </div>
+            <p class="aniwave-slide-desc">
+              Hollywood-grade cinematic color presets and 10,000+ lossless sound effects. Used by top creators on YouTube, TikTok, and commercial cinema.
+            </p>
+            <div class="aniwave-price-tag-row">
+              <span class="aniwave-current-price">$49</span>
+              <span class="aniwave-old-price">$299</span>
+              <span class="aniwave-discount-pill">-85% OFF</span>
+            </div>
+            <div class="aniwave-actions-row">
+              <a href="product.html?id=luts-pack" class="aniwave-btn-play">▶ BUY NOW - $49</a>
+              <a href="product.html?id=luts-pack" class="aniwave-btn-details">ℹ️ View Details</a>
+            </div>
+            <div class="aniwave-dots-row">
+              <button class="aniwave-dot" onclick="jumpAniwaveSlide(0)" title="Slide 1"></button>
+              <button class="aniwave-dot" onclick="jumpAniwaveSlide(1)" title="Slide 2"></button>
+              <button class="aniwave-dot" onclick="jumpAniwaveSlide(2)" title="Slide 3"></button>
+              <button class="aniwave-dot active" onclick="jumpAniwaveSlide(3)" title="Slide 4"></button>
+            </div>
+          </div>
+          <div class="aniwave-slide-visual">
+            <div class="aniwave-visual-mask"></div>
+            <div class="aniwave-visual-mask-bottom"></div>
+            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=1200" alt="Cinematic LUTs" class="aniwave-visual-img" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. ANIWAVE SOCIAL SHARE / NOTICE BAR (EXACT SCREENSHOT MATCH) -->
+    <div class="aniwave-share-bar">
+      <div class="aniwave-share-top-row">
+        <div class="aniwave-share-msg">
+          <span class="info-icon">ℹ️</span>
+          If you enjoy DigiStoreX, please consider sharing it with your fellow creators & entrepreneurs. Thank you!
+        </div>
+        <div class="aniwave-share-buttons">
+          <span class="aniwave-shares-count">🔥 85.3k Shares</span>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://boyg37558-blip.github.io/work-/" target="_blank" class="share-btn fb">Facebook</a>
+          <a href="https://twitter.com/intent/tweet?text=Check%20out%20DigiStoreX%20for%20top%20software,%20AI%20tools%20and%20digital%20assets!&url=https://boyg37558-blip.github.io/work-/" target="_blank" class="share-btn x">𝕏 Post</a>
+          <a href="https://www.reddit.com/submit?url=https://boyg37558-blip.github.io/work-/&title=Best%20Digital%20Products%20and%20SaaS%20Tools" target="_blank" class="share-btn reddit">Reddit</a>
+          <a href="https://api.whatsapp.com/send?text=Hey!%20Check%20out%20these%20awesome%20digital%20tools%20and%20software:%20https://boyg37558-blip.github.io/work-/" target="_blank" class="share-btn whatsapp">WhatsApp</a>
+          <a href="https://t.me/share/url?url=https://boyg37558-blip.github.io/work-/&text=High-ticket%20software%20and%20AI%20tools" target="_blank" class="share-btn telegram">Telegram</a>
+        </div>
+      </div>
+      <div class="aniwave-share-bottom-sub">
+        <div>
+          ⚡ Fast UI? Instant Digital Downloads <span class="aniwave-sub-badge-lite">⚡ DigiStoreX Lite</span>
+        </div>
+        <div>
+          🔒 100% Secure Checkout via PayPal & Stripe &nbsp;|&nbsp; 🛡️ Official 1-Year Commercial Warranty
+        </div>
+      </div>
+    </div>
+
+
+    
+    <!-- 3. ANIWAVE 2-COLUMN LAYOUT (CATALOG + TRENDING LEADERBOARD) -->
+    <div class="aniwave-content-grid">
+      <div class="aniwave-catalog-column">
+        <!-- 01: VIDEO EDITING & VFX -->
+        
+    <section class="category-block" id="video-section" data-category="video">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-number">01</span>
+          <h2 class="section-title">🎬 Video Editing & VFX Assets</h2>
+        </div>
+        <a href="#video-section" class="see-more">View All Assets →</a>
+      </div>
+
+      <div class="product-grid">
+        <!-- 1. LUTs Pack -->
+        <div class="product-card" data-title="Cinematic LUTs & Color Grading Master Pack">
+          <span class="card-badge">-85%</span>
+          <a href="product.html?id=luts-pack" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600" alt="LUTs Pack" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">Video Editing</span>
+            <a href="product.html?id=luts-pack" class="card-title">Cinematic LUTs & Color Grade Pro Pack (500+ Presets)</a>
+            <div class="rating">★★★★★ <span>(1,940)</span></div>
+            <div class="price-row">
+              <span class="old-price">$299</span>
+              <span class="current-price">$49</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('Cinematic LUTs Master Pack', 49)">Add to Cart</button>
+              <a href="product.html?id=luts-pack" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Motion FX -->
+        <div class="product-card" data-title="Motion FX & Cinematic Sound Library">
+          <span class="card-badge">-80%</span>
+          <a href="product.html?id=motion-fx" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600" alt="Premiere Pack" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">Premiere Pro / Sound FX</span>
+            <a href="product.html?id=motion-fx" class="card-title">Motion FX & Cinematic Sound Library (2,500+ Assets)</a>
+            <div class="rating">★★★★★ <span>(2,810)</span></div>
+            <div class="price-row">
+              <span class="old-price">$399</span>
+              <span class="current-price">$79</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('Motion FX Sound Library', 79)">Add to Cart</button>
+              <a href="product.html?id=motion-fx" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Viral Reels -->
+        <div class="product-card" data-title="Viral Reels & TikTok Editing Templates">
+          <span class="card-badge">-90%</span>
+          <a href="product.html?id=viral-reels" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?w=600" alt="AE Templates" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">Templates</span>
+            <a href="product.html?id=viral-reels" class="card-title">Viral Reels & TikTok Editing Templates (AE & CapCut)</a>
+            <div class="rating">★★★★★ <span>(4,120)</span></div>
+            <div class="price-row">
+              <span class="old-price">$499</span>
+              <span class="current-price">$59</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('Viral Reels Editing Templates', 59)">Add to Cart</button>
+              <a href="product.html?id=viral-reels" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. 3D Motion Titles -->
+        <div class="product-card" data-title="3D Kinetic Typography & Motion Title Suite">
+          <span class="card-badge">-82%</span>
+          <a href="product.html?id=3d-titles" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600" alt="3D Motion" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">VFX & Titles</span>
+            <a href="product.html?id=3d-titles" class="card-title">3D Kinetic Typography & Motion Title Suite</a>
+            <div class="rating">★★★★★ <span>(840)</span></div>
+            <div class="price-row">
+              <span class="old-price">$249</span>
+              <span class="current-price">$39</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('3D Kinetic Typography Suite', 39)">Add to Cart</button>
+              <a href="product.html?id=3d-titles" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02: AI & AUTOMATION TOOLS -->
+    <section class="category-block" id="ai-section" data-category="ai">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-number">02</span>
+          <h2 class="section-title">🤖 AI & Automation Tools</h2>
+        </div>
+        <a href="#ai-section" class="see-more">View All AI Tools →</a>
+      </div>
+
+      <div class="product-grid">
+        <!-- 5. AI Content Generator -->
+        <div class="product-card" data-title="AI Content Generator Pro">
+          <span class="card-badge">-78%</span>
+          <a href="product.html?id=ai-content-generator" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600" alt="AI Generator" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">AI Automation</span>
+            <a href="product.html?id=ai-content-generator" class="card-title">AI Content Generator Pro — Unlimited Copy Engine</a>
+            <div class="rating">★★★★★ <span>(3,450)</span></div>
+            <div class="price-row">
+              <span class="old-price">$897</span>
+              <span class="current-price">$179</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('AI Content Generator Pro', 179)">Add to Cart</button>
+              <a href="product.html?id=ai-content-generator" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. AI Chatbot Builder -->
+        <div class="product-card" data-title="AI Chatbot Builder Pro">
+          <span class="card-badge">-75%</span>
+          <a href="product.html?id=ai-chatbot-builder" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780efad99a?w=600" alt="Chatbot" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">AI Chatbots</span>
+            <a href="product.html?id=ai-chatbot-builder" class="card-title">AI Chatbot Builder Pro — No-Code Customer Bot</a>
+            <div class="rating">★★★★★ <span>(2,190)</span></div>
+            <div class="price-row">
+              <span class="old-price">$799</span>
+              <span class="current-price">$189</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('AI Chatbot Builder Pro', 189)">Add to Cart</button>
+              <a href="product.html?id=ai-chatbot-builder" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03: TRAINING & COURSES -->
+    <section class="category-block" id="courses-section" data-category="courses">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-number">03</span>
+          <h2 class="section-title">🎓 Training & Certification Courses</h2>
+        </div>
+        <a href="#courses-section" class="see-more">View All Courses →</a>
+      </div>
+
+      <div class="product-grid">
+        <!-- 7. Digital Marketing Mastery -->
+        <div class="product-card" data-title="Digital Marketing Mastery Course">
+          <span class="card-badge">-80%</span>
+          <a href="product.html?id=digital-marketing-mastery" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="Marketing Mastery" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">Masterclass</span>
+            <a href="product.html?id=digital-marketing-mastery" class="card-title">Digital Marketing Mastery 2026 Certification</a>
+            <div class="rating">★★★★★ <span>(3,421)</span></div>
+            <div class="price-row">
+              <span class="old-price">$697</span>
+              <span class="current-price">$149</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('Digital Marketing Mastery', 149)">Add to Cart</button>
+              <a href="product.html?id=digital-marketing-mastery" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. AI Video Masterclass -->
+        <div class="product-card" data-title="AI Video Creation Masterclass">
+          <span class="card-badge">-85%</span>
+          <a href="product.html?id=ai-video-masterclass" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=600" alt="Video Masterclass" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">New Course</span>
+            <a href="product.html?id=ai-video-masterclass" class="card-title">AI Video Creation Masterclass — From Zero to Pro</a>
+            <div class="rating">★★★★★ <span>(1,105)</span></div>
+            <div class="price-row">
+              <span class="old-price">$599</span>
+              <span class="current-price">$99</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('AI Video Creation Masterclass', 99)">Add to Cart</button>
+              <a href="product.html?id=ai-video-masterclass" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. SEO Certification -->
+        <div class="product-card" data-title="SEO Certification Program">
+          <span class="card-badge">-85%</span>
+          <a href="product.html?id=seo-certification" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="SEO Program" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">SEO</span>
+            <a href="product.html?id=seo-certification" class="card-title">SEO Certification Program & Ranking Blueprint</a>
+            <div class="rating">★★★★★ <span>(2,876)</span></div>
+            <div class="price-row">
+              <span class="old-price">$899</span>
+              <span class="current-price">$129</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('SEO Certification Program', 129)">Add to Cart</button>
+              <a href="product.html?id=seo-certification" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04: DESIGN BUNDLES -->
+    <section class="category-block" id="design-section" data-category="design">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-number">04</span>
+          <h2 class="section-title">🎨 Design Bundles & Kits</h2>
+        </div>
+        <a href="#design-section" class="see-more">View All Design →</a>
+      </div>
+
+      <div class="product-grid">
+        <!-- 10. Design Everything Bundle -->
+        <div class="product-card" data-title="Design Everything Bundle">
+          <span class="card-badge">-85%</span>
+          <a href="product.html?id=design-bundle" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600" alt="Design Bundle" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">Graphic Suite</span>
+            <a href="product.html?id=design-bundle" class="card-title">Design Everything Bundle — 100,000+ Graphic Assets</a>
+            <div class="rating">★★★★★ <span>(5,890)</span></div>
+            <div class="price-row">
+              <span class="old-price">$1,299</span>
+              <span class="current-price">$199</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('Design Everything Bundle', 199)">Add to Cart</button>
+              <a href="product.html?id=design-bundle" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Complete Brand Identity Kit -->
+        <div class="product-card" data-title="Complete Brand Identity Kit">
+          <span class="card-badge">-83%</span>
+          <a href="product.html?id=brand-identity" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=600" alt="Brand Kit" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">Branding</span>
+            <a href="product.html?id=brand-identity" class="card-title">Complete Brand Identity Kit — Logos, Fonts & Palettes</a>
+            <div class="rating">★★★★★ <span>(3,210)</span></div>
+            <div class="price-row">
+              <span class="old-price">$1,199</span>
+              <span class="current-price">$199</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('Complete Brand Identity Kit', 199)">Add to Cart</button>
+              <a href="product.html?id=brand-identity" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05: MARKETING TOOLS -->
+    <section class="category-block" id="marketing-section" data-category="marketing">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-number">05</span>
+          <h2 class="section-title">🚀 Marketing & SEO Suites</h2>
+        </div>
+        <a href="#marketing-section" class="see-more">View All Marketing →</a>
+      </div>
+
+      <div class="product-grid">
+        <!-- 12. Pro Marketing Suite -->
+        <div class="product-card" data-title="Pro Marketing Suite - Complete Automation">
+          <span class="card-badge">-75%</span>
+          <a href="product.html?id=pro-marketing-suite" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="Pro Marketing" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">All-in-One Suite</span>
+            <a href="product.html?id=pro-marketing-suite" class="card-title">Pro Marketing Suite — Complete Automation Platform</a>
+            <div class="rating">★★★★★ <span>(2,847)</span></div>
+            <div class="price-row">
+              <span class="old-price">$999</span>
+              <span class="current-price">$249</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('Pro Marketing Suite', 249)">Add to Cart</button>
+              <a href="product.html?id=pro-marketing-suite" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13. SEO Supercharger Toolkit -->
+        <div class="product-card" data-title="SEO Supercharger Toolkit">
+          <span class="card-badge">-70%</span>
+          <a href="product.html?id=seo-toolkit" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="SEO Suite" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">SEO Software</span>
+            <a href="product.html?id=seo-toolkit" class="card-title">SEO Supercharger Toolkit — Backlinks & Ranking Engine</a>
+            <div class="rating">★★★★★ <span>(1,520)</span></div>
+            <div class="price-row">
+              <span class="old-price">$749</span>
+              <span class="current-price">$229</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('SEO Supercharger Toolkit', 229)">Add to Cart</button>
+              <a href="product.html?id=seo-toolkit" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06: SOFTWARE TOOLS & SAAS SCRIPTS (100% DIGITAL) -->
+    <section class="category-block" id="software-section" data-category="software">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-number">06</span>
+          <h2 class="section-title">⚡ Software Tools & SaaS Scripts (Full Source Code & Lifetime License)</h2>
+        </div>
+        <a href="#software-section" class="see-more">View All Software →</a>
+      </div>
+
+      <div class="product-grid">
+        <!-- 14. LeadGen Pro -->
+        <div class="product-card" data-title="LeadGen Pro - Automated B2B Lead Scraper & Cold Email Engine">
+          <span class="card-badge">-80%</span>
+          <a href="product.html?id=leadgen-pro" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="LeadGen Pro Software" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">B2B Software • Python & GUI</span>
+            <a href="product.html?id=leadgen-pro" class="card-title">LeadGen Pro — Automated B2B Lead Scraper & Cold Outreach Engine</a>
+            <div class="rating">★★★★★ <span>(1,420)</span></div>
+            <div class="price-row">
+              <span class="old-price">$499</span>
+              <span class="current-price">$99</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('LeadGen Pro Software', 99)">Add to Cart</button>
+              <a href="product.html?id=leadgen-pro" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15. AutoReels AI -->
+        <div class="product-card" data-title="AutoReels AI - Faceless Video Generator & Social Auto-Poster">
+          <span class="card-badge">-78%</span>
+          <a href="product.html?id=autoreels-ai" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600" alt="AutoReels AI Software" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">AI Software • Auto-Posting</span>
+            <a href="product.html?id=autoreels-ai" class="card-title">AutoReels AI — Faceless Video Generator & Social Media Auto-Poster</a>
+            <div class="rating">★★★★★ <span>(2,890)</span></div>
+            <div class="price-row">
+              <span class="old-price">$699</span>
+              <span class="current-price">$149</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('AutoReels AI Software', 149)">Add to Cart</button>
+              <a href="product.html?id=autoreels-ai" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16. SaaS LaunchPad -->
+        <div class="product-card" data-title="SaaS LaunchPad - Next.js Full Stack Boilerplate">
+          <span class="card-badge">-80%</span>
+          <a href="product.html?id=saas-launchpad" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" alt="SaaS LaunchPad" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">Developer Suite • Next.js 14</span>
+            <a href="product.html?id=saas-launchpad" class="card-title">SaaS LaunchPad — Full-Stack Next.js 14 Boilerplate (Auth + PayPal + UI)</a>
+            <div class="rating">★★★★★ <span>(3,110)</span></div>
+            <div class="price-row">
+              <span class="old-price">$999</span>
+              <span class="current-price">$199</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('SaaS LaunchPad Boilerplate', 199)">Add to Cart</button>
+              <a href="product.html?id=saas-launchpad" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 17. SEO AutoBlog Engine -->
+        <div class="product-card" data-title="SEO AutoBlog Engine - Programmatic AI Publisher">
+          <span class="card-badge">-78%</span>
+          <a href="product.html?id=seo-autoblog" class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="SEO AutoBlog Engine" class="card-img" />
+          </a>
+          <div class="card-body">
+            <span class="card-category">Automation • WordPress Plugin</span>
+            <a href="product.html?id=seo-autoblog" class="card-title">SEO AutoBlog Engine — Programmatic AI Content Publisher</a>
+            <div class="rating">★★★★★ <span>(1,870)</span></div>
+            <div class="price-row">
+              <span class="old-price">$599</span>
+              <span class="current-price">$129</span>
+            </div>
+            <div class="delivery-info">Ships <span>FREE</span> by Instant Digital Download</div>
+            <div class="card-actions">
+              <button class="add-btn" onclick="addToCart('SEO AutoBlog Engine', 129)">Add to Cart</button>
+              <a href="product.html?id=seo-autoblog" class="details-btn">Details →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  
+      </div>
+      
+      <!-- ANIWAVE "TOP ANIME" STYLE TRENDING WIDGET -->
+      <aside class="aniwave-trending-sidebar">
+        <div class="trending-widget-header">
+          <h3 class="trending-widget-title">🔥 Top Products</h3>
+          <div class="trending-filter-tabs">
+            <button class="trending-tab-btn active" id="btnTabDay" onclick="switchAniwaveTrendingTab('day')">Day</button>
+            <button class="trending-tab-btn" id="btnTabWeek" onclick="switchAniwaveTrendingTab('week')">Week</button>
+            <button class="trending-tab-btn" id="btnTabMonth" onclick="switchAniwaveTrendingTab('month')">Month</button>
+          </div>
+        </div>
+        
+        <div class="trending-rank-list" id="aniwaveTrendingList">
+          <!-- Dynamically populated by switchAniwaveTrendingTab() -->
+        </div>
+      </aside>
+
+    </div>
+    </main>
+  
+
+  <!-- CART DRAWER WITH OFFICIAL PAYPAL BUTTONS -->
+  <div class="backdrop" id="backdrop" onclick="toggleCart()"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3>Your Digital Cart</h3>
+      <button onclick="toggleCart()" style="background:none; border:none; color:#fff; font-size:20px; cursor:pointer;">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p style="color:#6b7280; text-align:center; margin-top:40px;">Your cart is empty.</p>
+    </div>
+    <div style="border-top:1px solid var(--border-color); padding-top:15px; margin-top:auto;">
+      <div style="display:flex; justify-content:space-between; font-weight:700; font-size:18px; margin-bottom: 15px;">
+        <span>Total:</span>
+        <span id="cartTotal" style="color:var(--accent-orange);">$0</span>
+      </div>
+
+      <!-- PAYPAL BUTTON CONTAINER -->
+      <div id="paypal-button-container">
+        <p style="color:#6b7280; font-size:13px; text-align:center;">Add a product to cart to checkout with PayPal</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">Product added to cart!</div>
+
+  <script>
+    
+    let cart = [];
+
+    // CATEGORY & SEARCH FILTERING (INSTANT REAL-TIME)
+    let currentCategory = 'all';
+
+    function filterCategory(cat, btn) {
+      currentCategory = cat;
+      document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+      if(btn) btn.classList.add('active');
+      
+      const catSelect = document.getElementById('searchCat');
+      if(catSelect) catSelect.value = cat;
+
+      applySearch();
+    }
+
+    function applySearch() {
+      const q = (document.getElementById('searchInput').value || '').toLowerCase().trim();
+      const catSelect = document.getElementById('searchCat');
+      const selectedCat = catSelect ? catSelect.value : currentCategory;
+      
+      const sections = document.querySelectorAll('.category-block');
+      const notice = document.getElementById('searchNotice');
+      const noticeText = document.getElementById('searchNoticeText');
+      const noResultsBox = document.getElementById('noResultsBox');
+      const noResultsQuery = document.getElementById('noResultsQuery');
+
+      let totalMatches = 0;
+
+      sections.forEach(sec => {
+        const secCat = sec.getAttribute('data-category');
+        const catMatches = (selectedCat === 'all' || secCat === selectedCat);
+        
+        let secVisibleCount = 0;
+        const secCards = sec.querySelectorAll('.product-card');
+        
+        secCards.forEach(card => {
+          const title = (card.getAttribute('data-title') || '').toLowerCase();
+          const cardBody = card.innerText.toLowerCase();
+          const matchesQuery = (q === '' || title.includes(q) || cardBody.includes(q));
+
+          if(catMatches && matchesQuery) {
+            card.style.display = 'flex';
+            secVisibleCount++;
+            totalMatches++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if(secVisibleCount > 0) {
+          sec.style.display = 'block';
+        } else {
+          sec.style.display = 'none';
+        }
+      });
+
+      if(q !== '' || selectedCat !== 'all') {
+        notice.style.display = 'flex';
+        let filterDesc = [];
+        if(q) filterDesc.push('matching "' + q + '"');
+        if(selectedCat !== 'all') filterDesc.push('in ' + selectedCat.toUpperCase());
+        noticeText.innerHTML = 'Found <strong style="color:var(--accent-orange);">' + totalMatches + '</strong> product' + (totalMatches === 1 ? '' : 's') + ' ' + filterDesc.join(' ');
+      } else {
+        notice.style.display = 'none';
+      }
+
+      if(totalMatches === 0) {
+        noResultsBox.style.display = 'block';
+        noResultsQuery.innerText = 'We couldn\'t find any products matching "' + q + '". Try searching for "Reels", "LUTs", "AI", "SEO", or "Courses".';
+      } else {
+        noResultsBox.style.display = 'none';
+      }
+    }
+
+    function resetSearch() {
+      document.getElementById('searchInput').value = '';
+      const catSelect = document.getElementById('searchCat');
+      if(catSelect) catSelect.value = 'all';
+      filterCategory('all', document.querySelector('.filter-tab'));
+    }
+
+    // Instant real-time typing listener
+    const searchInput = document.getElementById('searchInput');
+    if(searchInput) {
+      searchInput.addEventListener('input', applySearch);
+      searchInput.addEventListener('keyup', (e) => {
+        if(e.key === 'Enter') applySearch();
+      });
+    }
+
+    const searchCat = document.getElementById('searchCat');
+    if(searchCat) {
+      searchCat.addEventListener('change', (e) => {
+        currentCategory = e.target.value;
+        document.querySelectorAll('.filter-tab').forEach(b => {
+          const onclickAttr = b.getAttribute('onclick') || '';
+          if(onclickAttr.includes("'" + e.target.value + "'")) {
+            b.classList.add('active');
+          } else {
+            b.classList.remove('active');
+          }
+        });
+        applySearch();
+      });
+    }
+
+    // CART OPERATIONS
+    function toggleCart() {
+      document.getElementById('cartDrawer').classList.toggle('open');
+      document.getElementById('backdrop').classList.toggle('open');
+    }
+
+    function addToCart(title, price) {
+      cart.push({ title, price });
+      updateCartUI();
+      showToast(`${title} added to cart!`);
+    }
+
+    function updateCartUI() {
+      document.getElementById('cartCount').innerText = cart.length;
+      const list = document.getElementById('cartItems');
+      const totalEl = document.getElementById('cartTotal');
+
+      if(cart.length === 0) {
+        list.innerHTML = '<p style="color:#6b7280; text-align:center; margin-top:40px;">Your cart is empty.</p>';
+        totalEl.innerText = '$0';
+        renderPayPalButtons(0);
+        return;
+      }
+
+      list.innerHTML = '';
+      let sum = 0;
+      cart.forEach((item, index) => {
+        sum += item.price;
+        const div = document.createElement('div');
+        div.className = 'cart-item';
+        div.innerHTML = `
+          <div>
+            <div style="font-size:14px; font-weight:700;">${item.title}</div>
+            <div style="font-size:13px; color:var(--accent-orange);">$${item.price}</div>
+          </div>
+          <button onclick="removeFromCart(${index})" style="background:none; border:none; color:#ef4444; cursor:pointer;">✕</button>
+        `;
+        list.appendChild(div);
+      });
+
+      totalEl.innerText = '$' + sum;
+      renderPayPalButtons(sum);
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      updateCartUI();
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.innerText = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2500);
+    }
+
+    // PAYPAL SMART BUTTONS RENDER LOGIC
+    function renderPayPalButtons(total) {
+      const container = document.getElementById('paypal-button-container');
+      if (!container) return;
+      container.innerHTML = '';
+
+      if (total <= 0) {
+        container.innerHTML = '<p style="color:#6b7280; font-size:13px; text-align:center;">Add a product to cart to checkout with PayPal</p>';
+        return;
+      }
+
+      if (window.paypal) {
+        paypal.Buttons({
+          style: {
+            layout: 'vertical',
+            color: 'gold',
+            shape: 'rect',
+            label: 'paypal'
+          },
+          createOrder: function(data, actions) {
+            return actions.order.create({
+              purchase_units: [{
+                amount: {
+                  value: total.toString()
+                },
+                description: 'DigiStoreX Digital Products Order'
+              }]
+            });
+          },
+          onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+              cart = [];
+              updateCartUI();
+              window.location.href = 'success.html?name=Complete%20Digital%20Pack%20Order';
+            });
+          },
+          onError: function(err) {
+            console.error('PayPal Checkout Error:', err);
+            alert('Payment could not be processed. Please try again.');
+          }
+        }).render('#paypal-button-container');
+      }
+    }
+  
+    /* =========================================================
+       ANIWAVE HERO SLIDER & TRENDING LEADERBOARD SCRIPT
+    ========================================================= */
+    let currentAniwaveSlide = 0;
+    const totalAniwaveSlides = 4;
+
+    function updateAniwaveSlider() {
+      const track = document.getElementById('aniwaveTrack');
+      if (track) {
+        track.style.transform = 'translateX(-' + (currentAniwaveSlide * 100) + '%)';
+      }
+      // Update dots across all slides
+      const allDotRows = document.querySelectorAll('.aniwave-dots-row');
+      allDotRows.forEach(row => {
+        const dots = row.querySelectorAll('.aniwave-dot');
+        dots.forEach((dot, idx) => {
+          if (idx === currentAniwaveSlide) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      });
+    }
+
+    function moveAniwaveSlide(direction) {
+      currentAniwaveSlide += direction;
+      if (currentAniwaveSlide >= totalAniwaveSlides) {
+        currentAniwaveSlide = 0;
+      } else if (currentAniwaveSlide < 0) {
+        currentAniwaveSlide = totalAniwaveSlides - 1;
+      }
+      updateAniwaveSlider();
+    }
+
+    function jumpAniwaveSlide(index) {
+      currentAniwaveSlide = index;
+      updateAniwaveSlider();
+    }
+
+    // Touch swipe and drag for mobile
+    const heroSliderElem = document.getElementById('aniwaveHeroSlider');
+    if (heroSliderElem) {
+      let touchStartX = 0;
+      let touchEndX = 0;
+      heroSliderElem.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+      heroSliderElem.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        if (diff > 50) moveAniwaveSlide(1);
+        else if (diff < -50) moveAniwaveSlide(-1);
+      }, { passive: true });
+    }
+
+    // TOP TRENDING LEADERBOARD DATA (DAY / WEEK / MONTH)
+    const aniwaveTrendingData = {
+      day: [
+        {
+          id: 'leadgen-pro',
+          title: 'LeadGen Pro — Automated B2B Lead Scraper',
+          price: '$99',
+          type: 'Software',
+          rating: '★ 4.9',
+          img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300'
+        },
+        {
+          id: 'autoreels-ai',
+          title: 'AutoReels AI — Faceless Video Generator',
+          price: '$149',
+          type: 'AI Video',
+          rating: '★ 5.0',
+          img: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=300'
+        },
+        {
+          id: 'saas-launchpad',
+          title: 'SaaS LaunchPad — Next.js 14 Boilerplate',
+          price: '$199',
+          type: 'Codebase',
+          rating: '★ 4.9',
+          img: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=300'
+        },
+        {
+          id: 'luts-pack',
+          title: 'Cinematic LUTs & Pro Color Grade Pack',
+          price: '$49',
+          type: 'VFX Pack',
+          rating: '★ 4.9',
+          img: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=300'
+        },
+        {
+          id: 'chatbot-builder',
+          title: 'AI Chatbot & Support Assistant Builder',
+          price: '$89',
+          type: 'Automation',
+          rating: '★ 4.8',
+          img: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=300'
+        }
+      ],
+      week: [
+        {
+          id: 'autoreels-ai',
+          title: 'AutoReels AI — Faceless Video Generator',
+          price: '$149',
+          type: 'AI Video',
+          rating: '★ 5.0',
+          img: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=300'
+        },
+        {
+          id: 'saas-launchpad',
+          title: 'SaaS LaunchPad — Next.js 14 Boilerplate',
+          price: '$199',
+          type: 'Codebase',
+          rating: '★ 4.9',
+          img: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=300'
+        },
+        {
+          id: 'leadgen-pro',
+          title: 'LeadGen Pro — Automated B2B Lead Scraper',
+          price: '$99',
+          type: 'Software',
+          rating: '★ 4.9',
+          img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300'
+        },
+        {
+          id: 'pro-marketing-suite',
+          title: 'All-in-One Digital Marketing Agency Suite',
+          price: '$99',
+          type: 'Marketing',
+          rating: '★ 4.9',
+          img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300'
+        },
+        {
+          id: 'graphics-vault',
+          title: '100,000+ Graphic Design Assets Mega Vault',
+          price: '$39',
+          type: 'Graphics',
+          rating: '★ 4.9',
+          img: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=300'
+        }
+      ],
+      month: [
+        {
+          id: 'saas-launchpad',
+          title: 'SaaS LaunchPad — Next.js 14 Boilerplate',
+          price: '$199',
+          type: 'Codebase',
+          rating: '★ 4.9',
+          img: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=300'
+        },
+        {
+          id: 'autoreels-ai',
+          title: 'AutoReels AI — Faceless Video Generator',
+          price: '$149',
+          type: 'AI Video',
+          rating: '★ 5.0',
+          img: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=300'
+        },
+        {
+          id: 'leadgen-pro',
+          title: 'LeadGen Pro — Automated B2B Lead Scraper',
+          price: '$99',
+          type: 'Software',
+          rating: '★ 4.9',
+          img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300'
+        },
+        {
+          id: 'marketing-mastery',
+          title: 'Digital Marketing Mastery & Ads Course 2026',
+          price: '$79',
+          type: 'Course',
+          rating: '★ 4.9',
+          img: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=300'
+        },
+        {
+          id: 'luts-pack',
+          title: 'Cinematic LUTs & Pro Color Grade Pack',
+          price: '$49',
+          type: 'VFX Pack',
+          rating: '★ 4.9',
+          img: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=300'
+        }
+      ]
+    };
+
+    function switchAniwaveTrendingTab(tab) {
+      const btnDay = document.getElementById('btnTabDay');
+      const btnWeek = document.getElementById('btnTabWeek');
+      const btnMonth = document.getElementById('btnTabMonth');
+      if (btnDay) btnDay.classList.remove('active');
+      if (btnWeek) btnWeek.classList.remove('active');
+      if (btnMonth) btnMonth.classList.remove('active');
+
+      if (tab === 'day' && btnDay) btnDay.classList.add('active');
+      if (tab === 'week' && btnWeek) btnWeek.classList.add('active');
+      if (tab === 'month' && btnMonth) btnMonth.classList.add('active');
+
+      const items = aniwaveTrendingData[tab] || aniwaveTrendingData.day;
+      const listContainer = document.getElementById('aniwaveTrendingList');
+      if (!listContainer) return;
+
+      listContainer.innerHTML = items.map((item, index) => `
+        <a href="product.html?id=${item.id}" class="trending-rank-item">
+          <div class="rank-number">${index + 1}</div>
+          <div class="rank-thumb-box">
+            <img src="${item.img}" alt="${item.title}" class="rank-thumb-img" />
+          </div>
+          <div class="rank-info">
+            <div class="rank-title" title="${item.title}">${item.title}</div>
+            <div class="rank-meta-row">
+              <span class="rank-price-pill">${item.price}</span>
+              <span class="rank-tag-pill">${item.rating}</span>
+              <span class="rank-tag-pill">${item.type}</span>
+            </div>
+          </div>
+        </a>
+      `).join('');
+    }
+
+    // Initialize Trending Leaderboard on load
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        switchAniwaveTrendingTab('day');
+      });
+    } else {
+      switchAniwaveTrendingTab('day');
+    }
+
+  </script>
+</body>
+</html>
